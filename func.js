@@ -39,9 +39,15 @@
 // const result = myFunc(arr);
 // console.log(result.length);
 
-const arr = [1, 2, 3, 6, 7, 5, 65, 8, 9];
-if (arr.length >= 10) {
-  console.log("ok");
-} else {
-  console.log("not ok");
-}
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// if (arr.length >= 10) {
+//   arr.splice(10); // Removes all elements starting from index 10
+// }
+
+// console.log(arr);
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const result = arr.pop();
+console.log(result);
+console.log(arr);
