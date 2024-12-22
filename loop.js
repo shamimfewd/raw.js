@@ -34,6 +34,13 @@
 // }
 
 // ============= for loop =============
-for (let i = 11; i >= 1; i--) {
-  console.log(i);
+// for (let i = 11; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// ============================
+let base = 5;
+let range = 10;
+for (let i = 1; i <= range; i++) {
+  console.log(`${base} x ${i} = ${base * i}`);
 }

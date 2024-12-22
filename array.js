@@ -10,3 +10,6 @@
 //splice():  change the main array
 
 const num = [1, 5, 6, 9, 8, 7, 22, 55, 66, 99];
+num[5] = 656565
+
+console.log(num);
