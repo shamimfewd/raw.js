@@ -9,7 +9,14 @@
 //slice(): don't change the main array
 //splice():  change the main array
 
-const num = [1, 5, 6, 9, 8, 7, 22, 55, 66, 99];
-num[5] = 656565
+let numbers = [1, 5, 6, 9, 8, 7, 22, 55, 66, 99];
 
-console.log(num);
+let reveredNum = [];
+for (const num of numbers) {
+  reveredNum.unshift(num);
+  //   console.log(num);
+}
+// console.log(reveredNum);
+
+let persons = ["shamim", "shohag", "mahmud"];
+
