@@ -9,7 +9,7 @@
 //slice(): don't change the main array
 //splice():  change the main array
 
-let numbers = [1, 5, 6, 9, 8, 7, 22, 55, 66, 99];
+let numbers = [58, 22, 55, 66, 99];
 
 let reveredNum = [];
 for (const num of numbers) {
@@ -20,3 +20,10 @@ for (const num of numbers) {
 
 let persons = ["shamim", "shohag", "mahmud"];
 
+let tesArr = [58, 22, 55, 66, 99];
+let index3 = tesArr[3];
+let index4 = tesArr[4];
+
+for (let i = 0; i < tesArr.length; i++) {
+  console.log(`${i} ${tesArr[i]}`);
+}
