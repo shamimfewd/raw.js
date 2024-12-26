@@ -23,7 +23,8 @@ let persons = ["shamim", "shohag", "mahmud"];
 let tesArr = [58, 22, 55, 66, 99];
 let index3 = tesArr[3];
 let index4 = tesArr[4];
+console.log(index3 + index4);
 
 for (let i = 0; i < tesArr.length; i++) {
-  console.log(`${i} ${tesArr[i]}`);
+  // console.log(`${i}: ${tesArr[i]}`);
 }
