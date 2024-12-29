@@ -51,11 +51,28 @@
 
 // =================================
 
-const numbers = [5, 6, 11, 12, 98, 5];
+// const numbers = [5, 6, 11, 12, 98, 5];
 
-function findMultiple(numbers, num) {
-  const count = numbers.filter((item) => item === num).length;
-  return count;
+// function findMultiple(numbers, num) {
+//   const count = numbers.filter((item) => item === num).length;
+//   return count;
+// }
+// const result = findMultiple(numbers, 2525);
+// console.log(result);
+
+// ===============================
+
+const numbers = [65, 66, 67, 654, 62, 474, 633, 2222, 11111, 68, 69, 70];
+
+function getMax(numbers) {
+  let maxNum = [];
+  for (const num of numbers) {
+    if (num > maxNum) {
+      maxNum = num;
+    }
+  }
+  return maxNum;
 }
-const result = findMultiple(numbers, 2525);
+
+const result = getMax(numbers);
 console.log(result);
