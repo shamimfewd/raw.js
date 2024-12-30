@@ -62,17 +62,81 @@
 
 // ===============================
 
-const numbers = [65, 66, 67, 654, 62, 474, 633, 2222, 11111, 68, 69, 70];
+// const numbers = [65, 66, 67, 654, 62, 474, 633, 2222, 68, 69, 70];
 
-function getMax(numbers) {
-  let maxNum = [];
-  for (const num of numbers) {
-    if (num > maxNum) {
-      maxNum = num;
-    }
+// function getMax(numbers) {
+//   let maxNum = numbers[0];
+//   for (const num of numbers) {
+//     if (num > maxNum) {
+//       maxNum = num;
+//     }
+//   }
+//   return maxNum;
+// }
+
+// const result = getMax(numbers);
+// console.log(result);
+
+// const numbers = [65, 66, 67, 654, 62, 474, 633, 2222, 68, 69, 70];
+// function getMin(numbers) {
+//   let min = numbers[0];
+//   for (const num of numbers) {
+//     if (num < min) {
+//       min = num;
+//     }
+//   }
+//   return min;
+// }
+
+// const result = getMin(numbers);
+// console.log(result);
+
+// // ==================================================
+
+// function getCalculate(chair, table, bed) {
+//   const perChair = 3;
+//   const perTable = 10;
+//   const perBed = 50;
+
+//   const totalChair = perChair * chair;
+//   const totalTable = perTable * table;
+//   const totalBed = perBed * bed;
+
+//   const inTotal = totalChair + totalTable + totalBed;
+//   return inTotal;
+
+//   // return {
+//   //   totalChair,
+//   //   totalTable,
+//   //   totalBed,
+
+//   //   inTotal: totalChair + totalBed + totalTable,
+//   // };
+// }
+
+// const result = getCalculate(5, 6, 1);
+// console.log(result);
+
+function clothsCalculate(shirt, pent, shoe) {
+  const perShirt = 500;
+  const perPent = 700;
+  const perShoe = 1000;
+  const disCount = 5;
+
+  const totalShirtPrice = perShirt * shirt;
+  const totalPentPrice = perPent * pent;
+  const totalShoePrice = perShoe * shoe;
+
+  const inTotal = totalShirtPrice + totalPentPrice + totalShoePrice;
+  console.log("inTotal =", inTotal);
+  if (inTotal >= 4000) {
+    const disCountAmount = inTotal - (inTotal * disCount) / 100;
+    return disCountAmount;
+  } else {
+    console.log("you are not eligible for the offer");
   }
-  return maxNum;
-}
 
-const result = getMax(numbers);
+  return inTotal;
+}
+const result = clothsCalculate(1, 5, 1);
 console.log(result);
